@@ -1,0 +1,18 @@
+:root {
+  --bg: #0f1116;
+  --fg: #e8e9ed;
+  --accent: #f59e0b;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--fg);
+}
+
+.shell { max-width: 720px; margin: 0 auto; padding: 32px 16px; }
+header { display: flex; justify-content: space-between; align-items: center; }
+button { background: var(--accent); border: 0; color: #0b0c10; padding: 8px 14px; border-radius: 8px; cursor: pointer; }
+input { background: #171a21; border: 1px solid #262b36; color: inherit; padding: 8px 10px; border-radius: 8px; }
+.error { color: #ff6b6b; }
