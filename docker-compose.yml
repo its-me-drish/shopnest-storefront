@@ -1,0 +1,13 @@
+services:
+  api:
+    build: .
+    ports: ['4000:4000']
+    environment:
+      MONGO_URI: mongodb://mongo:27017/shopnest-storefront
+    depends_on: [mongo]
+  mongo:
+    image: mongo:7
+    volumes: ['mongo-data:/data/db']
+
+volumes:
+  mongo-data:
